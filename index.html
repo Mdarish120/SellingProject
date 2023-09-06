@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        body {
+    background-image: url('https://img.freepik.com/premium-vector/print_586360-903.jpg');
+    background-size: cover; /* Adjust the background size as needed */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* This keeps the background fixed when scrolling */
+  
+}
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Admin Panel</h1>
+        <div class="form-group">
+            <label for="sellingPrice">Selling Price:</label>
+            <input type="number" class="form-control" id="sellingPrice" placeholder="Enter Selling Price">
+        </div>
+        <div class="form-group">
+            <label for="productName">Product Name:</label>
+            <input type="text" class="form-control" id="productName" placeholder="Enter Product Name">
+        </div>
+        <div class="form-group">
+            <label for="category">Category:</label>
+            <select class="form-control" id="category">
+                <option value="Electronic Item">Electronic Item</option>
+                <option value="Skin Item">Skin Item</option>
+                <option value="Food Item">Food Item</option>
+            </select>
+        </div>
+        <button class="btn btn-primary" id="addProduct">Add</button>
+        <div id="productList">
+            <!-- Display products here -->
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS (optional) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Include Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Include your custom JavaScript file -->
+    <script src="app.js"></script>
+</body>
+</html>
